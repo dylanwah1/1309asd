@@ -3,7 +3,7 @@ $('itourstart').on('pageinit', function () {
 });
 $('#itourhome').on('pageinit', function () {
     $('#tourList').on('click', getData);
-    $('#clearData').on('click', clearLocalData);
+    $('#clearData').on('click', clearData);
 
 });
 
@@ -177,6 +177,7 @@ var editTour = function () {
     $('#name').val(tour.name);
     $('#sdate').val(tour.sdate);
     $('#edate').val(tour.edate);
+    $('key').val(data);
 
 
 
