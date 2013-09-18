@@ -3,7 +3,7 @@ $('itourstart').on('pageinit', function () {
 });
 $('#itourhome').on('pageinit', function () {
     $('#tourList').on('click', getData);
-    $('#clearData').on('click', clearData);
+    $('#clearData').on('click', clearLocalData);
 
 });
 
@@ -177,7 +177,7 @@ var editTour = function () {
     $('#name').val(tour.name);
     $('#sdate').val(tour.sdate);
     $('#edate').val(tour.edate);
-    $('key').val(data);
+    $('#key').val(data);
 
 
 
@@ -193,7 +193,7 @@ var removeTour = function () {
     }
 };
 
-var clearData = function () {
+var clearLocalData = function () {
 
     if (localStorage === 0) {
         alert("You have no tours in local storage");
