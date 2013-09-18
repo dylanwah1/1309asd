@@ -3,7 +3,7 @@ $('itourstart').on('pageinit', function () {
 });
 $('#itourhome').on('pageinit', function () {
     $('#tourList').on('click', getData);
-    $('#clearData').on('click', clearLocalData);
+    $('#clearData').on('click', function(){console.log('something'); clearLocalData();
 
 });
 
